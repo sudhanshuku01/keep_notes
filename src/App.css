@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Plus+Jakarta+Sans&family=Russo+One&display=swap');
+
+/* font-family: 'Agdasima', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Russo One', sans-serif; */
+
+body{
+  background-color: black;
+}
+*{
+  color: white;
+}
+.authbutton{
+  padding: 5px 8px;
+  background:#4949ac;
+  outline: none;
+  border: none;
+}
+.authbutton a{
+  color: white;
+}
+.form label{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.form input{
+  font-family: math;
+  background-color: transparent;
+  color: white;
+}
+.form-control:focus{
+  color: white;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.15rem rgba(13,110,253,.25);
+}
+.form button,.form button:disabled{
+  cursor: pointer;
+  padding: 5px 12px;
+  background: #5e1c1c;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px #0c267c;
+}
+.form button:hover{
+  background-color: #4f5945;
+}
+.notesection h2{
+      font-family: 'Font Awesome 6 Free';
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(3deg, rgb(20 19 19) 43%, rgb(93 84 108) 100%);
+    
+}
+.card-body div{
+  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+.card-body p{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.card{
+  background-color: transparent;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px #4f5945;
+}
+.alert{
+  color: white;
+    opacity: 1;
+    justify-content: center;
+    height: 45px;
+    font-size: 19px;
+    background: #171752;
+}
+.modal-content{
+  background: black;
+  border: 1px solid grey;
+  padding: 25px;
+  box-shadow: 0 0 10px red;
+}
+.navbar-brand{
+  font-size: 21px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    letter-spacing: 3px;
+    color: #ffecec;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+@media only screen and (max-width:600px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }  
+}
+/* body{
+
+} */
