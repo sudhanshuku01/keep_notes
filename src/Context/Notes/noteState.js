@@ -2,12 +2,12 @@ import noteContext from "./noteContext";
 import {useState } from "react";
 const NoteState=(props)=>{
     const [notes,setNotes]=useState([])
-    const host="http://localhost:5000"
+    const host="https://keep-notes-13sl.onrender.com"
     let showAlert=props.showAlert;
     // useEffect(()=>{
     // },[notes,setNotes])
     // console.log(notes)
-//for adding a note function
+//for adding a note function 
    const addNote= async (title,description,tag)=>{
     const response=await fetch(`${host}/api/notes/addnote`,{
         method:'POST',

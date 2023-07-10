@@ -2,11 +2,12 @@ import React,{ useState} from 'react'
 import {useNavigate} from 'react-router-dom';
 
 export default function Login(props) {
+  const host="https://keep-notes-13sl.onrender.com"
     const [credential,setCredential]=useState({email:'', password:'' })
     let navigate=useNavigate();
    const handleSubmit= async (e)=>{
       e.preventDefault();
-      const response=await fetch("http://localhost:5000/api/auth/login",{
+      const response=await fetch(`${host}/api/auth/login`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'

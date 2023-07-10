@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 
 export default function Signup(props) {
+  const host="https://keep-notes-13sl.onrender.com"
     const [credential,setCredential]=useState({name:'',email:'', password:'',confirmpassword:'' })
     let navigate=useNavigate();
    const handleSubmit= async (e)=>{
@@ -10,7 +11,7 @@ export default function Signup(props) {
         props.showAlert("Password and Confirm Password should be same","danger");
         return 
       }
-      const response=await fetch("http://localhost:5000/api/auth/createuser",{
+      const response=await fetch(`${host}/api/auth/createuser`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
