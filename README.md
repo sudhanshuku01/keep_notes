@@ -1,5 +1,5 @@
 # You can checkout the website 
-    [Open](https://keeps-your-notes.netlify.app/login)
+  Open https://keeps-your-notes.netlify.app/login
 
 # Getting Started with Create React App
 
