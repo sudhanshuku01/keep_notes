@@ -1,8 +1,10 @@
-const mongoose=require('mongoose');
-const mongoURI="mongodb+srv://user:user123@cluster0.9c6eryd.mongodb.net/Notebook";
+import dotenv from 'dotenv'
+dotenv.config()
+import mongoose from 'mongoose'
+const mongoURI=process.env.MONGO_URI;
 const connectToMongo=()=>{
     mongoose.connect(mongoURI,()=>{
         console.log('DB connected successfully')
     })
 }
-module.exports=connectToMongo;
+export default connectToMongo;

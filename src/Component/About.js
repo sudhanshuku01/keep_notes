@@ -1,10 +1,7 @@
-// import React, { useContext, useEffect } from 'react'
-// import noteContext from '../Context/Notes/noteContext'
-
 export default function About() {
   return (
-    <div>
-     this is about js page
-    </div>
+    <div className="footer">
+        <div>Copyright © 2023 sudhanshu</div>
+      </div>
   )
 }

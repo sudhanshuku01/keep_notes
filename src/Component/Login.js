@@ -2,7 +2,7 @@ import React,{ useState} from 'react'
 import {useNavigate} from 'react-router-dom';
 
 export default function Login(props) {
-  const host="https://keep-notes-13sl.onrender.com"
+  const host="http://localhost:5000"
     const [credential,setCredential]=useState({email:'', password:'' })
     let navigate=useNavigate();
    const handleSubmit= async (e)=>{

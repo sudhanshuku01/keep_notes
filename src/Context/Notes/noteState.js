@@ -2,7 +2,7 @@ import noteContext from "./noteContext";
 import {useState } from "react";
 const NoteState=(props)=>{
     const [notes,setNotes]=useState([])
-    const host="https://keep-notes-13sl.onrender.com"
+    const host="http://localhost:5000"
     let showAlert=props.showAlert;
     // useEffect(()=>{
     // },[notes,setNotes])

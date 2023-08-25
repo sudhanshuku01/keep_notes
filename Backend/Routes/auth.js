@@ -1,10 +1,11 @@
-const {body, validationResult } = require('express-validator');
-const User=require('../Models/User')
-const fetchUser=require('../Middleware/fetchuser')
-const bcrypt = require('bcryptjs');
-const jwt=require('jsonwebtoken')
+import {body, validationResult }  from 'express-validator';
+import User from '../Models/User.js'
+// import sendMail from '../Models/SendMail'
+import fetchUser from '../Middleware/fetchuser.js'
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken'
 const JWT_SECRET="sudhs@#%$12";
-const express=require('express');
+import express from 'express';
 const router=express.Router();
 //createuser using post api and no authentication required
 router.post('/createuser',[
@@ -75,4 +76,4 @@ router.post("/getuser",fetchUser,async (req,res)=>{
     res.status(500).json({success:false,message:"internal server error"})
    }
 })
-module.exports=router;
+export default router;

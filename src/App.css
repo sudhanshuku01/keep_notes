@@ -91,6 +91,21 @@ body{
     letter-spacing: 3px;
     color: #ffecec;
 }
+.footer{
+  margin-top: 100px;
+  margin-bottom: 10px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+    border: 1px solid rebeccapurple;
+}
+.footer div{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 10px;
+  color: #e7c7d2;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 8px;

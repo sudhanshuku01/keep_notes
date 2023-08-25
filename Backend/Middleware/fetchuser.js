@@ -1,6 +1,6 @@
-const jwt =require('jsonwebtoken');
+import jwt from 'jsonwebtoken'
 const JWT_SECRET="sudhs@#%$12";
-const User=require('../Models/User')
+import User from '../Models/User.js'
 const fetchUser= async (req,res,next)=>{
     const token=req.header('auth-token')
     if(!token){
@@ -16,4 +16,4 @@ const fetchUser= async (req,res,next)=>{
         res.status(500).json({success:false,message:"Please authenticate using a valid token"})
     }
 }
-module.exports=fetchUser
+export default fetchUser;

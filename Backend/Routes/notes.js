@@ -1,8 +1,8 @@
-const express=require('express');
-const router=express.Router();
-const Note=require('../Models/Notes')
-const fetchUser=require('../Middleware/fetchuser')
-const { body,validationResult }=require('express-validator')
+import  express from 'express';
+import Note from '../Models/Notes.js'
+import fetchUser from '../Middleware/fetchuser.js';
+import  { body,validationResult } from 'express-validator'
+const  router=express.Router();
 //get all notes router
 router.get('/fetchallnotes',fetchUser,async (req,res)=>{
     try{
@@ -78,4 +78,5 @@ router.delete('/deletenote/:id',fetchUser,async (req,res)=>{
         res.status(500).json({success:false,message:"Internal Server Error"})
     }
 })
-module.exports=router;
+
+export default router;

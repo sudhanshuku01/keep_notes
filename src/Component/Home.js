@@ -1,5 +1,6 @@
 import React from 'react'
 import Notes from './Notes'
+import About from './About'
 import AddNote from './AddNote'
 export default function Home(props) {
   return (
@@ -10,6 +11,7 @@ export default function Home(props) {
   <div className='container'>
    <Notes/>
    </div>
+   <About/>
   </>
   )
 }
